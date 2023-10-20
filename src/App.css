@@ -1,42 +1,66 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+body {
+  margin: 0;
+}
+
+.app-container {
+  font-family: 'Manrope', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-color: #202632;
+}
+
+.advice-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
+  width: 500px;
+  background-color: #313a49;
+  border-radius: 12px;
+  padding: 24px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.advice-title {
+  color: #5ee0ae;
+  font-size: 15px;
+  letter-spacing: 3px;
+  margin: 24px 0px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.advice-body {
+  width: 90%;
+  color: #cfe0ea;
+  font-size: 28px;
+  margin-bottom: 36px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.pattern-divider {
+  margin-bottom: 36px;
 }
 
-.card {
-  padding: 2em;
+.randomize-button {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(32px);
+  background-color: #53feaa;
+  height: 64px;
+  width: 64px;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-.read-the-docs {
-  color: #888;
+.randomize-button:hover{
+  background-color: #53ffab;
+  box-shadow: 0px 0px 30px 0px rgba(83,255,171,1);
 }
